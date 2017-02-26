@@ -36,13 +36,26 @@ h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
+
 .event {
-  background-color: rgba(0, 0, 0, 0.55);
-  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
   padding-bottom: 20px;
   display: inline-block;
   width: 100%;
-  margin-left: -10px;
+}
+
+.about {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  width: 100%;
+  color: white;
+  padding-bottom: 30px;
+}
+
+.text {
+  text-align: center;
+  display: inline-block;
+  padding: 0 40px 20px 40px;
 }
 
 .button {
