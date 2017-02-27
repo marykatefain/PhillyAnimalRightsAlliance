@@ -1,0 +1,120 @@
+body {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("assets/background2_dark.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+
+.title {
+  width: 80%;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  margin-top: -10px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 8.5vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px #333333;
+}
+
+h2 {
+  font-size: 5vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px #333333;
+  margin-top: -20px;
+  color: #FFE4B5;
+}
+
+h3 {
+  font-size: 3vw;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  text-align: right;
+  margin: 20px 20px 0 0;
+}
+
+.parent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.form_div {
+  display: none;
+  width: 500px;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  position:absolute;
+  color: black;
+}
+
+.close {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.icon {
+  width: 100px;
+}
+
+.time-and-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.event {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-bottom: 20px;
+  display: inline-block;
+  width: 80%;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 80%;
+}
+
+.about {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  width: 80%;
+  color: white;
+  padding-bottom: 30px;
+}
+
+.text {
+  text-align: center;
+  display: block;
+  padding: 0 50px 20px 50px;
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.button {
+  background-color: #E45700;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #E6C800;
+}
