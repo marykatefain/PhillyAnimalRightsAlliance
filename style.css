@@ -52,7 +52,7 @@ h3 {
 .form_div {
   display: none;
   width: 500px;
-  height: 300px;
+  height: auto;
   background-color: white;
   border-radius: 10px;
   position:absolute;
