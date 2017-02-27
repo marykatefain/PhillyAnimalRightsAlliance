@@ -59,6 +59,10 @@ h3 {
   color: black;
 }
 
+.close {
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 .icon {
   width: 100px;
