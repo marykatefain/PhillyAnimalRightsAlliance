@@ -10,9 +10,32 @@
 
   <header>
     <div class="header">
-      <div class="button" id="updates">Get Updates!</div>
+      <div class="button" id="updates" onclick="showDiv()">Get Updates!</div>
     </div>
+        <script>
+          function showDiv() {
+            document.getElementById('hidden_form').style.display = "block";
+          }
+          function hideDiv() {
+            document.getElementById('hidden_form').style.display = "none";
+          }
+        </script>
+
   </header>
+
+  <div class="parent">
+    <div class="form_div" id="hidden_form">
+      <h3>Subscribe to Updates</h3>
+        <form>
+        Name:
+        <input type="text" name="name"><br><br>
+        E-mail:
+        <input type="text" name="mail"><br><br>
+        <input class="button" type="submit" value="Send">
+        </form>
+        <p onclick="hideDiv()">Close</p>
+    </div>
+  </div>
 
   <body>
     <div id="content">

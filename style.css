@@ -43,6 +43,23 @@ h3 {
   margin: 20px 20px 0 0;
 }
 
+.parent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.form_div {
+  display: none;
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  position:absolute;
+  color: black;
+}
+
+
 .icon {
   width: 100px;
 }
@@ -91,8 +108,9 @@ h3 {
   display: inline-block;
   border-radius: 8px;
   font-size: 16px;
+  cursor: pointer;
 }
 
-.button:hover{
+.button:hover {
   background-color: #E6C800;
 }
