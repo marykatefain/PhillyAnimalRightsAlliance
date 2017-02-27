@@ -26,14 +26,15 @@
   <div class="parent">
     <div class="form_div" id="hidden_form">
       <h3>Subscribe to Updates</h3>
-        <form>
-        Name:
-        <input type="text" name="name"><br><br>
-        E-mail:
-        <input type="text" name="mail"><br><br>
-        <input class="button" type="submit" value="Send">
+        <form target="transFrame" action="https://docs.google.com/forms/d/e/1FAIpQLScW0Be9xJyC10Tr4iWna32HCA2khoDqE4CK6uhzLAQ27sYFXQ/formResponse?embedded=true" method="POST">
+          <label for="entry.1238111156">Name:</label>
+          <input type="text" name="entry.1238111156"><br><br>
+          <label for="entry.534346312">E-mail:</label>
+          <input type="text" name="entry.534346312"><br><br>
+          <input class="button" type="submit" value="Send">
         </form>
         <div class="close" onclick="hideDiv()"><p>Close</p></div>
+        <iframe style="display: none;" name="transFrame" id="transFrame"></iframe>
     </div>
   </div>
 
