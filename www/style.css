@@ -1,6 +1,7 @@
 body {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+  background-color: black;
   background-image: url("assets/background2_dark.jpg");
   background-size: cover;
   background-repeat: no-repeat;
