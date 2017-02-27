@@ -1,0 +1,24 @@
+{
+  "name": "philly-animal-rights-alliance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "./node_modules/.bin/surge www phillyara.surge.sh",
+    "dev": "./node_modules/.bin/http-server -c-1 www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marykatefain/PhillyAnimalRightsAlliance.git"
+  },
+  "author": "Alex Gleason",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/marykatefain/PhillyAnimalRightsAlliance/issues"
+  },
+  "homepage": "https://github.com/marykatefain/PhillyAnimalRightsAlliance#readme",
+  "devDependencies": {
+    "http-server": "latest",
+    "surge": "latest"
+  }
+}
