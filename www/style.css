@@ -2,11 +2,14 @@ body {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   background-color: black;
-  background-image: url("assets/background2_dark.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: white;
+}
+
+.home {
+  background-image: url("assets/background2_dark.jpg");
 }
 
 .title {
@@ -38,6 +41,18 @@ h3 {
   font-size: 20px;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: pink;
+}
+
+ul {
+  text-align: left;
 }
 
 .header {
