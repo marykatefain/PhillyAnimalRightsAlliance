@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html>
+{% extends "_base.nunjucks" %}
 
-<head>
-  <title>Values | Philly Animal Rights Alliance</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
-</head>
-
-<body>
-
+{% block content %}
   <h2 class="page_title">Values and Goals</h2>
 
   <h3>Our Values</h3>
@@ -29,7 +20,4 @@
     <li>Changing public perception of animal rights</li>
     <li>Increase collaboration between animal rights activists and other social justice movements</li>
   </ul>
-
-</body>
-
-</html>
+{% endblock %}

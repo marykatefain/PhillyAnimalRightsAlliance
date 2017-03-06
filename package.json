@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "deploy": "./node_modules/.bin/surge www phillyara.surge.sh",
-    "start": "./node_modules/.bin/http-server -c-1 www"
+    "start": "./node_modules/.bin/wick server www"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/marykatefain/PhillyAnimalRightsAlliance#readme",
   "devDependencies": {
-    "http-server": "latest",
+    "wick": "latest",
     "surge": "latest"
   }
 }
