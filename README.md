@@ -3,7 +3,7 @@
 ## Local dev
 
     npm install
-    npm run dev
+    npm run start
 
 ## Deploy
 

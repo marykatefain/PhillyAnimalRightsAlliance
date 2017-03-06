@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "deploy": "./node_modules/.bin/surge www phillyara.surge.sh",
-    "dev": "./node_modules/.bin/http-server -c-1 www"
+    "start": "./node_modules/.bin/http-server -c-1 www"
   },
   "repository": {
     "type": "git",
