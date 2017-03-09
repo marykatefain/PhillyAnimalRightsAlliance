@@ -39,7 +39,7 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   text-shadow: 2px 2px #333333;
-  margin-top: -20px;
+  margin-top: 20px;
   color: #FFE4B5;
 }
 
@@ -59,6 +59,16 @@ a:hover {
 
 ul {
   text-align: left;
+}
+
+.nav {
+  display: inline-block;
+}
+
+.nav li {
+  list-style: none;
+  display: inline-block;
+  margin: auto 20px;
 }
 
 .header {
@@ -175,4 +185,8 @@ ul {
 
 .button:hover {
   background-color: #E6C800;
+}
+
+footer img {
+  width: 250px;
 }
