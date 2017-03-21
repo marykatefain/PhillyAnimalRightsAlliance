@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   background-color: black;
@@ -12,26 +13,26 @@ body.index {
   background-image: url("../images/background2_dark.jpg");
 }
 
-.title {
-  width: 80%;
-  display: inline-block;
-  text-align: center;
-  align-items: center;
-  margin-top: -10px;
+.content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-@media screen and (max-width: 700px) {
-  .title {
-    width: 90%;
-  }
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 7rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px #333333;
 }
 
 h1 {
   text-transform: uppercase;
-  font-size: 8.5vw;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  text-shadow: 2px 2px #333333;
+  margin: 0;
 }
 
 h2 {
@@ -49,6 +50,7 @@ h3 {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   text-align: left;
+  padding: 0 20px;
 }
 
 h4 {
@@ -59,6 +61,8 @@ h4 {
 
 a {
   color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
@@ -67,6 +71,10 @@ a:hover {
 
 ul {
   text-align: left;
+}
+
+section {
+  margin: 20px 0;
 }
 
 .nav {
@@ -84,13 +92,23 @@ ul {
   margin: 20px 20px 0 0;
 }
 
+.information {
+  display: flex;
+  justify-content: space-around;
+
+  img {
+    border-radius: 100%;
+    border: 5px solid white;
+    padding: 3px;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .header {
     text-align: center;
     margin: 0 auto;
   }
 }
-
 
 .parent {
   position: relative;
@@ -100,12 +118,18 @@ ul {
 
 .form_div {
   display: none;
-  width: 500px;
+  width: 400px;
   height: auto;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
-  position:absolute;
-  color: black;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: #fff 5px solid;
+}
+
+.fb_iframe_widget span iframe[style] {
+width: 100% !important;
 }
 
 .close {
@@ -117,49 +141,25 @@ ul {
   width: 100px;
 }
 
-.time-and-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-}
-
-.event {
-  background-color: rgba(0, 0, 0, 0.4);
-  padding-bottom: 20px;
-  display: inline-block;
-  width: 80%;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 80%;
-}
-
-@media screen and (max-width: 700px) {
-  .event {
-    width: 90%;
-  }
-}
-
-.facebook {
-  align-items: center;
-  text-align: center;
-}
-
 .social {
   width: 250px;
 }
 
 .about {
   background-color: rgba(0, 0, 0, 0.4);
-  display: inline-block;
-  width: 80%;
-  color: white;
-  padding-bottom: 30px;
 }
 
-@media screen and (max-width: 700px) {
-  .about {
-    width: 90%;
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  .facebook, .contact {
+    padding: 20px;
+  }
+
+  .contact {
+    text-align: right;
   }
 }
 

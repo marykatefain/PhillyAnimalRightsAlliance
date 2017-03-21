@@ -1,34 +1,27 @@
 {% extends "_base.njk" %}
 
 {% block content %}
-  <div class="title">
-    <h1>Philly Animal Rights Alliance</h1>
-  </div>
-  <div class="event">
-    <h4>Join the next meeting</h4>
-    <div class="time-and-icon">
-      <img class="icon" src="/assets/images/calendar_icon.png">
-      <div class="time">
-        <p>Sunday, March 19th 2017</p>
-        <p>Time: 3pm - 6pm</p>
-        <p>Location: TBA</p>
-      </div>
-    </div>
-    <div class="facebook">
-      <a href="https://www.facebook.com/events/1893746280862015/" target="_blank">
-        <img class="social" src="/assets/images/connect-facebook-button.png">
-      </a>
-    </div>
-  </div>
-  <div class="about">
+  <h1 class="title">Philly Animal Rights Alliance</h1>
+  <section class="information">
+    <a href="#" target="_blank"><img src="http://placehold.it/200x200"><h1>Who We Are</h1></a>
+    <a href="#" target="_blank"><img src="http://placehold.it/200x200"><h1>Values</h1></a>
+    <a href="#" target="_blank"><img src="http://placehold.it/200x200"><h1>Campaigns</h1></a>
+  </section>
+  <section class="about">
     <h4>About The Philly Animal Rights Alliance</h4>
     <div class="text">
       <p>The Philly Animal Rights Alliance (PARA) is a group of local animal rights activists across a variety of philosophies, organizations, and tactics working together and network, share information and resources, increase cooperation, and collaborate on large-scale projects with the shared goal of creaing a sustainable movement for animal liberation in Philadelphia.</p>
       <p>Read about our <a href="/values">values, goals,</a> and <a href="/campaigns">campaign priorities</a></p>
     </div>
-  </div>
+  </section>
   <footer>
-    <a href ="https://www.facebook.com/phillyanimalrights/"><img src="/assets/images/like-us-on-facebook.png"></a>
-    <p class="contact">For more information contact us at phillyanimalrights@gmail.com</p>
+    <div class="facebook">
+      <div class="fb-page" data-href="https://www.facebook.com/phillyanimalrights/" data-tabs="events, timeline" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/phillyanimalrights/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/phillyanimalrights/">Philly Animal Rights Alliance</a></blockquote></div>
+    </div>
+    <div class="contact">
+      <h1>Contact Info</h1>
+      <p>For more information contact us at</p>
+      <a href="mailto:phillyanimalrights@gmail.com">phillyanimalrights@gmail.com</a>
+    </div>
   </footer>
 {% endblock %}

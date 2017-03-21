@@ -7,13 +7,23 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
   </head>
   <body class="{{ current.source }}">
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <header>
       <div class="header">
         <div class="nav">
           <ul>
-            <a href="index.html"><li class="nav_link">Home</li></a>
-            <a href="values.html"><li class="nav_link">Values</li></a>
-            <a href="campaigns.html"><li class="nav_link">Campaigns</li></a>
+            <a href="/"><li class="nav_link">Home</li></a>
+            <a href="/values"><li class="nav_link">Values</li></a>
+            <a href="/campaigns"><li class="nav_link">Campaigns</li></a>
           </ul>
         </div>
         <div class="button" id="updates" onclick="showDiv()">Get Updates!</div>
@@ -36,7 +46,7 @@
       </div>
     </div>
 
-    <div id="content">
+    <div class="content">
       {% block content %}{% endblock %}
     </div>
     <script src="/assets/scripts/main.js"></script>
