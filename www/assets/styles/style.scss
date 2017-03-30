@@ -1,5 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
+  max-width: 1200px;
+  margin: auto;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   background-color: black;
@@ -9,12 +14,11 @@ body {
   color: white;
 }
 
-body.index {
+body {
   background-image: url("../images/background2_dark.jpg");
 }
 
 .content {
-  max-width: 1200px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -69,27 +73,34 @@ a:hover {
   color: pink;
 }
 
-ul {
-  text-align: left;
-}
-
 section {
   margin: 20px 0;
 }
 
-.nav {
-  display: inline-block;
-}
-
-.nav li {
-  list-style: none;
-  display: inline-block;
-  margin: auto 20px;
-}
-
-.header {
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
   text-align: right;
-  margin: 20px 20px 0 0;
+  background: #00b359;
+
+  nav {
+    margin: 20px 0;
+    width: 100%;
+
+    a {
+      padding: 0 15px;
+    }
+  }
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
 }
 
 .information {
@@ -103,17 +114,11 @@ section {
   }
 }
 
-@media screen and (max-width: 700px) {
-  .header {
-    text-align: center;
-    margin: 0 auto;
-  }
-}
-
 .parent {
   position: relative;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .form_div {
@@ -123,13 +128,8 @@ section {
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
   position: absolute;
-  top: 20px;
-  right: 20px;
-  border: #fff 5px solid;
-}
-
-.fb_iframe_widget span iframe[style] {
-width: 100% !important;
+  right: 0;
+  border: #fff 4px solid;
 }
 
 .close {
@@ -137,15 +137,7 @@ width: 100% !important;
   text-decoration: underline;
 }
 
-.icon {
-  width: 100px;
-}
-
-.social {
-  width: 250px;
-}
-
-.about {
+.info-box {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -164,18 +156,9 @@ footer {
 }
 
 .text {
-  text-align: center;
-  display: block;
-  padding: 0 50px 20px 50px;
   font-size: 18px;
   max-width: 600px;
   margin: 0 auto;
-}
-
-@media screen and (max-width: 700px) {
-  .text {
-    padding: 0 10px 20px 10px;
-  }
 }
 
 .button {
@@ -189,12 +172,9 @@ footer {
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
+  margin: 15px;
 }
 
 .button:hover {
   background-color: #E6C800;
-}
-
-footer img {
-  width: 250px;
 }

@@ -7,6 +7,57 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
   </head>
   <body class="{{ current.source }}">
+    <header>
+      <div class="logo">
+        <img src="http://placehold.it/100x100">
+      </div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/values">Values</a>
+        <a href="/campaigns">Campaign Priorites</a>
+        <a href="/calendar">Calendar</a>
+        <a href="/resources">Resources</a>
+        <a href="/contact">Contact Us</a>
+        <div class="button" id="updates" onclick="showDiv()">Get Updates!</div>
+      </nav>
+      <div class="parent">
+        <div class="form_div" id="hidden_form">
+          <h3>Subscribe to Updates</h3>
+          <form target="transFrame" action="https://docs.google.com/forms/d/e/1FAIpQLSdc7O_TfYuqUOPm5D5O65b9RMjQtmFtOh0HWSxlBpB2OBO99Q/formResponse" method="POST">
+            <label for="entry.1923990243">Name:</label>
+            <input type="text" name="entry.1923990243"><br><br>
+            <label for="entry.1795929851">E-mail:</label>
+            <input type="text" name="entry.1795929851"><br><br>
+            <input class="button" type="submit" value="Send" onclick="hideDiv()">
+          </form>
+          <div class="close" onclick="hideDiv()"><p>Close</p></div>
+          <iframe style="display: none;" name="transFrame" id="transFrame"></iframe>
+        </div>
+      </div>
+    </header>
+
+    <img class="banner" src="http://placehold.it/1200x400">
+
+    <div class="content">
+      {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+      <div class="facebook">
+        <div class="fb-page" data-href="https://www.facebook.com/phillyanimalrights/" data-tabs="events, timeline" data-height="350" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+          <blockquote cite="https://www.facebook.com/phillyanimalrights/" class="fb-xfbml-parse-ignore">
+            <a href="https://www.facebook.com/phillyanimalrights/">Philly Animal Rights Alliance</a>
+          </blockquote>
+        </div>
+      </div>
+      <div class="contact">
+        <h1>Contact Info</h1>
+        <p>For more information contact us at</p>
+        <a href="mailto:phillyanimalrights@gmail.com">phillyanimalrights@gmail.com</a>
+      </div>
+    </footer>
+
+    <script src="/assets/scripts/main.js"></script>
     <div id="fb-root"></div>
     <script>
       (function(d, s, id) {
@@ -17,38 +68,5 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-    <header>
-      <div class="header">
-        <div class="nav">
-          <ul>
-            <a href="/"><li class="nav_link">Home</li></a>
-            <a href="/values"><li class="nav_link">Values</li></a>
-            <a href="/campaigns"><li class="nav_link">Campaigns</li></a>
-          </ul>
-        </div>
-        <div class="button" id="updates" onclick="showDiv()">Get Updates!</div>
-      </div>
-
-
-    </header>
-    <div class="parent">
-      <div class="form_div" id="hidden_form">
-        <h3>Subscribe to Updates</h3>
-        <form target="transFrame" action="https://docs.google.com/forms/d/e/1FAIpQLSdc7O_TfYuqUOPm5D5O65b9RMjQtmFtOh0HWSxlBpB2OBO99Q/formResponse" method="POST">
-          <label for="entry.1923990243">Name:</label>
-          <input type="text" name="entry.1923990243"><br><br>
-          <label for="entry.1795929851">E-mail:</label>
-          <input type="text" name="entry.1795929851"><br><br>
-          <input class="button" type="submit" value="Send" onclick="hideDiv()">
-        </form>
-        <div class="close" onclick="hideDiv()"><p>Close</p></div>
-        <iframe style="display: none;" name="transFrame" id="transFrame"></iframe>
-      </div>
-    </div>
-
-    <div class="content">
-      {% block content %}{% endblock %}
-    </div>
-    <script src="/assets/scripts/main.js"></script>
   </body>
 </html>
