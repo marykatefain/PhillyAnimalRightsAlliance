@@ -1,0 +1,14 @@
+{% extends "_base.njk" %}
+
+{% block content %}
+  <h1 class="title">Contact Us</h1>
+
+  <section class="info-box">
+    <form class="contact-form" action="./mail" method="POST">
+      <input type="text" name="name" placeholder="NAME">
+      <input type="text" name="email" placeholder="EMAIL">
+      <textarea name="message" placeholder="MESSAGE"></textarea>
+      <input class="button" type="submit" value="Send">
+    </form>
+  </section>
+{% endblock %}
