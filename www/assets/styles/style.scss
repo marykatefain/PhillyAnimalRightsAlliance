@@ -160,6 +160,16 @@ header {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.category img {
+  width: 200px;
+  height: 200px;
+  filter: grayscale(100%);
+}
+
+.category img:hover {
+  filter: grayscale(0%);
+}
+
 .blurb {
   margin: 10px 30px;
   text-align: justify;
