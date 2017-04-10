@@ -106,6 +106,7 @@ header {
 
 .logo {
   flex-shrink: 0;
+  margin-left: 20px;
 }
 
 .logo img {
@@ -125,11 +126,13 @@ header {
   display: flex;
   justify-content: space-around;
   margin-bottom: 50px;
+  margin: auto 20px;
 
   img {
     border-radius: 100%;
     border: 5px solid white;
     padding: 3px;
+    margin-bottom: 10px;
   }
 }
 
@@ -160,6 +163,10 @@ header {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.category {
+  width: 30%;
+}
+
 .category img {
   width: 200px;
   height: 200px;
@@ -171,7 +178,7 @@ header {
 }
 
 .blurb {
-  margin: 10px 30px;
+  margin: 10px auto;
   text-align: justify;
 }
 
