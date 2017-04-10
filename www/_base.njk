@@ -5,39 +5,43 @@
     <link rel="stylesheet" href="/assets/styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
   </head>
   <body class="{{ current.source }}">
-    <header>
-      <div class="logo">
-        <img src="./assets/images/logo-draft-inverted.png">
-      </div>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/campaigns">Campaigns</a>
-        <a href="/calendar">Calendar</a>
-        <a href="/resources">Resources</a>
-        <a href="/contact">Contact Us</a>
-        <div class="button" id="updates" onclick="showDiv()">Get Updates!</div>
-      </nav>
-      <div class="parent">
-        <div class="form_div" id="hidden_form">
-          <h3>Subscribe to Updates</h3>
-          <form target="transFrame" action="https://docs.google.com/forms/d/e/1FAIpQLSdc7O_TfYuqUOPm5D5O65b9RMjQtmFtOh0HWSxlBpB2OBO99Q/formResponse" method="POST">
-            <label for="entry.1923990243">Name:</label>
-            <input type="text" name="entry.1923990243"><br><br>
-            <label for="entry.1795929851">E-mail:</label>
-            <input type="text" name="entry.1795929851"><br><br>
-            <input class="button" type="submit" value="Send" onclick="hideDiv()">
-          </form>
-          <div class="close" onclick="hideDiv()"><p>Close</p></div>
-          <iframe style="display: none;" name="transFrame" id="transFrame"></iframe>
+    <div class ="headerparent">
+      <header>
+        <div class="logo">
+          <img src="./assets/images/logo-draft-inverted.png">
         </div>
-      </div>
-    </header>
+        <nav>
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/campaigns">Campaigns</a>
+          <a href="/calendar">Calendar</a>
+          <a href="/resources">Resources</a>
+          <a href="/contact">Contact Us</a>
+          <div class="button" id="updates" onclick="showDiv()">Get Updates!</div>
+        </nav>
+        <div class="parent">
+          <div class="form_div" id="hidden_form">
+            <h3>Subscribe to Updates</h3>
+            <form target="transFrame" action="https://docs.google.com/forms/d/e/1FAIpQLSdc7O_TfYuqUOPm5D5O65b9RMjQtmFtOh0HWSxlBpB2OBO99Q/formResponse" method="POST">
+              <label for="entry.1923990243">Name:</label>
+              <input type="text" name="entry.1923990243"><br><br>
+              <label for="entry.1795929851">E-mail:</label>
+              <input type="text" name="entry.1795929851"><br><br>
+              <input class="button" type="submit" value="Send" onclick="hideDiv()">
+            </form>
+            <div class="close" onclick="hideDiv()"><p>Close</p></div>
+            <iframe style="display: none;" name="transFrame" id="transFrame"></iframe>
+          </div>
+        </div>
+      </header>
 
-    <div class = "pagebanner">
-      {% block title %}{% endblock %}
+      <div class = "pagebanner">
+        {% block title %}{% endblock %}
+      </div>
+
     </div>
 
     <div class="content">
