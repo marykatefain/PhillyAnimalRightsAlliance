@@ -19,10 +19,9 @@ body {
 }
 
 .content {
-  margin: auto;
+  margin: auto 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .title {
@@ -161,6 +160,7 @@ header {
 
 .info-box {
   background-color: rgba(0, 0, 0, 0.4);
+  text-align: left;
 }
 
 .category {
@@ -182,10 +182,27 @@ header {
   text-align: justify;
 }
 
+.detailed-page {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  margin: 0 20px;
+  background-color: #3d3d3d;
+  width: 25%;
+}
+
+.primary-content {
+  width: 75%;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 100px;
+  background-color: #E45700;
 
   .facebook, .contact {
     padding: 30px;
@@ -210,8 +227,8 @@ footer {
 
 .text {
   font-size: 18px;
-  max-width: 600px;
   margin: 0 auto;
+  text-align: left;
 }
 
 .button {
