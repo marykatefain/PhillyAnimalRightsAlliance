@@ -7,7 +7,7 @@ body {
   margin: auto;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  background-color: black;
+  background-color: #1e1e1e;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -15,7 +15,7 @@ body {
 }
 
 body {
-  background: black;
+  background: #1e1e1e;
 }
 
 .content {
@@ -159,7 +159,7 @@ header {
 }
 
 .info-box {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #1e1e1e;
   text-align: left;
 }
 
@@ -189,8 +189,9 @@ header {
 
 .sidebar {
   margin: 0 20px;
-  background-color: #3d3d3d;
+  background-color: #d7d7d7;
   width: 25%;
+  color: #0f0f0f;
 }
 
 .primary-content {
