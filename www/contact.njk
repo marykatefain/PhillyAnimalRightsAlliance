@@ -1,8 +1,10 @@
 {% extends "_base.njk" %}
 
-{% block content %}
+{% block title %}
   <h1 class="title">Contact Us</h1>
+{% endblock %}
 
+{% block content %}
   <section class="info-box">
     <form class="contact-form" action="./mail" method="POST">
       <input type="text" name="name" placeholder="NAME">

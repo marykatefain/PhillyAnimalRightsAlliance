@@ -9,12 +9,12 @@
   <body class="{{ current.source }}">
     <header>
       <div class="logo">
-        <img src="http://placehold.it/100x100">
+        <img src="./assets/images/logo-draft-inverted.png">
       </div>
       <nav>
         <a href="/">Home</a>
-        <a href="/values">Values</a>
-        <a href="/campaigns">Campaign Priorites</a>
+        <a href="/about">About</a>
+        <a href="/campaigns">Campaigns</a>
         <a href="/calendar">Calendar</a>
         <a href="/resources">Resources</a>
         <a href="/contact">Contact Us</a>
@@ -36,7 +36,9 @@
       </div>
     </header>
 
-    <img class="banner" src="http://placehold.it/1200x400">
+    <div class = "pagebanner">
+      {% block title %}{% endblock %}
+    </div>
 
     <div class="content">
       {% block content %}{% endblock %}

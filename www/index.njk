@@ -1,17 +1,22 @@
 {% extends "_base.njk" %}
 
-{% block content %}
+{% block title %}
   <h1 class="title">Philly Animal Rights Alliance</h1>
+{% endblock %}
+
+{% block content %}
   <section class="information">
-    <a href="/about"><img src="http://placehold.it/200x200"><h1>Who We Are</h1></a>
-    <a href="/values"><img src="http://placehold.it/200x200"><h1>Values</h1></a>
-    <a href="/campaings"><img src="http://placehold.it/200x200"><h1>Campaigns</h1></a>
-  </section>
-  <section class="info-box">
-    <h4>About The Philly Animal Rights Alliance</h4>
-    <div class="text">
-      <p>The Philly Animal Rights Alliance (PARA) is a group of local animal rights activists across a variety of philosophies, organizations, and tactics working together and network, share information and resources, increase cooperation, and collaborate on large-scale projects with the shared goal of creaing a sustainable movement for animal liberation in Philadelphia.</p>
-      <p>Read about our <a href="/values">values, goals,</a> and <a href="/campaigns">campaign priorities</a></p>
+    <div class="category">
+      <a href="/about"><img src="http://placehold.it/200x200"><h1>Who We Are</h1></a>
+      <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo, leo scelerisque pellentesque auctor, tortor sem maximus urna, eu pellentesque velit lectus sed massa. Duis vitae est a turpis dignissim lacinia a non augue. Nulla facilisi. </p>
+    </div>
+    <div class="category">
+      <a href="/campaigns"><img src="http://placehold.it/200x200"><h1>Campaigns</h1></a>
+      <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo, leo scelerisque pellentesque auctor, tortor sem maximus urna, eu pellentesque velit lectus sed massa. Duis vitae est a turpis dignissim lacinia a non augue. Nulla facilisi. </p>
+    </div>
+    <div class="category">
+      <a href="/calendar"><img src="http://placehold.it/200x200"><h1>Calendar</h1></a>
+      <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo, leo scelerisque pellentesque auctor, tortor sem maximus urna, eu pellentesque velit lectus sed massa. Duis vitae est a turpis dignissim lacinia a non augue. Nulla facilisi. </p>
     </div>
   </section>
 {% endblock %}
