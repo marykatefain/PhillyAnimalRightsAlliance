@@ -3,8 +3,8 @@
 }
 
 body {
-  max-width: 1200px;
-  margin: auto;
+  width: 100%;
+  margin: auto 0px auto 0px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   background-color: #2e2e2e;
@@ -37,6 +37,7 @@ body {
 }
 
 .title.home {
+  font-size: 7vw;
   margin-top: 10px;
 }
 
@@ -93,16 +94,18 @@ section {
   background-size: cover;
   background-position: absolute;
   min-height: 410px;
+  width: 100%;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 0px 0px 20px 0px;
+  padding-top: 20px;
   text-align: right;
 
   nav {
-    margin: 20px 0;
+    margin: 0px 0px 20px 0px;
     width: 100%;
 
     a {
