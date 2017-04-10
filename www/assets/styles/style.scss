@@ -7,7 +7,7 @@ body {
   margin: auto;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  background-color: #1e1e1e;
+  background-color: #2e2e2e;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -15,7 +15,7 @@ body {
 }
 
 body {
-  background: #1e1e1e;
+  background: #2e2e2e;
 }
 
 .content {
@@ -23,6 +23,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 
 .title {
   text-align: center;
@@ -33,6 +34,14 @@ body {
   text-shadow: 2px 2px #333333;
   margin-bottom: 40px;
   margin-top: 40px;
+}
+
+.title.home {
+  margin-top: 10px;
+}
+
+.title.campaign {
+  font-size: 5vw;
 }
 
 h1 {
@@ -71,7 +80,7 @@ a {
 }
 
 a:hover {
-  color: pink;
+  color: #ee9a66;
 }
 
 section {
@@ -84,7 +93,6 @@ section {
   background-size: cover;
   background-position: absolute;
   min-height: 410px;
-
 }
 
 header {
@@ -159,7 +167,7 @@ header {
 }
 
 .info-box {
-  background-color: #1e1e1e;
+  background-color: #2e2e2e;
   text-align: left;
 }
 
@@ -189,9 +197,25 @@ header {
 
 .sidebar {
   margin: 0 20px;
-  background-color: #d7d7d7;
+  background-color: #f9ddcc;
   width: 25%;
   color: #0f0f0f;
+
+  p {
+    padding: 0 20px;
+    text-align: left;
+  }
+
+  a {
+    color: #E45700;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  a:hover {
+    color: #ee9a66;
+  }
+
 }
 
 .primary-content {
@@ -210,7 +234,16 @@ footer {
   }
 
   .contact {
-    text-align: right;
+    text-align: left;
+
+    img {
+      height: 50px;
+    }
+
+    a:hover {
+      color: #0f0f0f;
+    }
+
   }
 }
 
