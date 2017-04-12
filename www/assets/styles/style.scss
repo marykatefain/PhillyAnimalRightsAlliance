@@ -225,6 +225,21 @@ header {
 
 .primary-content {
   width: 75%;
+  margin-top: 0px;
+
+  a {
+    text-decoration: underline;
+  }
+
+  h3 {
+    padding-left: 0px;
+    margin-top: 0px;
+  }
+
+}
+
+.cal {
+  margin-right: 20px;
 }
 
 footer {
