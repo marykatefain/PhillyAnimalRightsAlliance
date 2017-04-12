@@ -6,7 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- Calendar stuff-->
+    <link rel='stylesheet' href='./fullcalendar/fullcalendar.css' />
+    <script src='./fullcalendar/lib/jquery.min.js'></script>
+    <script src='/fullcalendar/lib/moment.min.js'></script>
+    <script src='./fullcalendar/fullcalendar.js'></script>
+    <script>
+        $(document).ready(function() {
+
+        // page is now ready, initialize the calendar...
+
+        $('#calendar').fullCalendar({
+            // put your options and callbacks here
+        })
+      });
+  </script>
+
   </head>
+
   <body class="{{ current.source }}">
     <div class ="headerparent">
       <header>
