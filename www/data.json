@@ -3,26 +3,34 @@
     "title": "Seeds of Disruption: How Food Technology Will Save the Planet with Bruce Friedrich",
     "start": "4/19/2017 17:00:00",
     "end": "4/19/2017 19:00:01",
-    "url": "https://www.facebook.com/events/343527096045122/"
+    "url": "https://www.facebook.com/events/343527096045122/",
+    "org": "Penn Animal Advocacy and Penn Animal Law Project",
+    "contact": "pennanimaladvocacy@gmail.com"
 },
 {
     "id": 1,
     "title": "From the Warsaw Ghetto to a Life of Compassion",
     "start": "4/26/2017 18:30:00",
     "end": "4/26/2017 21:00:01",
-    "url": "http://www.facebook.com/events/235933700212908/"
+    "url": "http://www.facebook.com/events/235933700212908/",
+    "org": "Jewish Veg",
+    "contact": "Naomi Davis, ndavis@jewishveg.org"
 },
 {
     "id": 2,
     "title": "DxE April Day of Action",
     "start": "4/29/2017 13:00:00",
     "end": "4/29/2017 16:00:01",
-    "url": "https://www.facebook.com/events/640027356182072/"
+    "url": "https://www.facebook.com/events/640027356182072/",
+    "org": "DxE Philly",
+    "contact": "Mary Kate Fain, mkfain1@gmail.com"
 },
 {
     "id": 3,
     "title": "PARA Meeting 3",
     "start": "4/23/2017 13:00:00",
     "end": "4/23/2017 15:00:01",
-    "url": "https://www.facebook.com/events/662591040608837/"
+    "url": "https://www.facebook.com/events/662591040608837/",
+    "org": "PARA",
+    "contact": "phillyanimalrights@gmail.com"
 }]
