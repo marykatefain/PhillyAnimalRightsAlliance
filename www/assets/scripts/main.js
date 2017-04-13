@@ -20,7 +20,13 @@ for (var i=0; i<entries.length; i++) {
   events.push({
     "id": entry.gsx$id.$t,
     "title": entry.gsx$titleofevent.$t,
-    "date": entry.gsx$starttime.$t,
-    // TODO: fill this out
+    "date": entry.gsx$date.$t,
+    "start": entry.gsx$starttime.$t
+    "end": entry.gsx$endtime.$t
+    "location": entry.gsx$location.$t
+    "class": entry.gsx$typeofevent.$t
+    "url": entry.gsx$date.$t
+    "contact": entry.gsx$contact.$t
+    "details": entry.gsx$details.$t
   });
 }``
