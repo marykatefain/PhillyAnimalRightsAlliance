@@ -53,7 +53,7 @@ h3 {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   text-align: left;
-  padding: 0 20px;
+  padding: 0;
 }
 
 h4 {
@@ -199,6 +199,10 @@ h3#form {
   color: #0f0f0f;
 }
 
+.sidebar h3 {
+  padding: 0 20px;
+}
+
 .sidebar p {
   padding: 0 20px;
   text-align: left;
@@ -216,6 +220,7 @@ h3#form {
 
 .primary-content {
   width: 75%;
+  margin-top: 0;
 }
 
 footer {

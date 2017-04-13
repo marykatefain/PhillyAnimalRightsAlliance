@@ -12,6 +12,8 @@ app.use(express.static('/assets'));
 
 app.use('/assets', express.static('assets'));
 
+app.use('/fullcalendar', express.static('fullcalendar'));
+
 
 nunjucks.configure("views", {
   autoescape: true,
