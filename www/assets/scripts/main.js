@@ -7,9 +7,11 @@ function hideDiv() {
 }
 
 
-var response = jQuery.ajax('https://spreadsheets.google.com/feeds/list/1nRQfilLPP1Cm2nO2RP9vnmVHRbDWTrl5bBILJvQC2QA/1/public/values?alt=json');
+var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
 
-var data = JSON.parse(response.responseText);
+var data = JSON.parse(this.responseText);
 
 var entries = data.feed.entry;
 
@@ -30,5 +32,9 @@ for (var i=0; i<entries.length; i++) {
     "details": entry.gsx$details.$t
   });
 }
-
 console.log(events);
+    }
+    
+  };
+  xhttp.open("GET", "https://spreadsheets.google.com/feeds/list/1nRQfilLPP1Cm2nO2RP9vnmVHRbDWTrl5bBILJvQC2QA/1/public/values?alt=json", true);
+  xhttp.send();
