@@ -141,7 +141,6 @@ nav a {
   justify-content: center;
   text-align: center;
 }
-
 .form_div {
   display: none;
   width: 400px;
@@ -154,6 +153,7 @@ nav a {
   text-align: center;
 }
 
+
 h3#form {
   text-align: center;
 }
@@ -161,6 +161,18 @@ h3#form {
 .close {
   cursor: pointer;
   text-decoration: underline;
+}
+
+.event-details {
+  display: block;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  border: #fff 4px solid;
+  text-align: left;
+  padding: 0 20px 0 20px;
+  margin-bottom: 20px;
 }
 
 .info-box {

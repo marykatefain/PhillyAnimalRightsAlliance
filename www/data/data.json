@@ -1,36 +1,56 @@
 [{
     "id": 0,
     "title": "Seeds of Disruption: How Food Technology Will Save the Planet with Bruce Friedrich",
-    "start": "4/19/2017 17:00:00",
-    "end": "4/19/2017 19:00:01",
+    "date": "4/19/2017",
+    "time": "5:00 pm - 7:00 pm",
+    "location": "Hall of Flags, Houston Hall",
     "url": "https://www.facebook.com/events/343527096045122/",
     "org": "Penn Animal Advocacy and Penn Animal Law Project",
-    "contact": "pennanimaladvocacy@gmail.com"
+    "contact": "pennanimaladvocacy@gmail.com",
+    "details": ""
 },
 {
     "id": 1,
     "title": "From the Warsaw Ghetto to a Life of Compassion",
-    "start": "4/26/2017 18:30:00",
-    "end": "4/26/2017 21:00:01",
+    "date": "4/26/2017",
+    "time": "6:30 pm - 9:00 p,",
+    "location": "The Gershman Y - 401 S Broad St, Philadelphia, PA 19147",
     "url": "http://www.facebook.com/events/235933700212908/",
     "org": "Jewish Veg",
-    "contact": "Naomi Davis, ndavis@jewishveg.org"
+    "contact": "Naomi Davis, ndavis@jewishveg.org",
+    "details": ""
 },
 {
     "id": 2,
     "title": "DxE April Day of Action",
-    "start": "4/29/2017 13:00:00",
-    "end": "4/29/2017 16:00:01",
+    "date": "4/29/2017",
+    "time": "1:00 p, - 4:00 pm",
+    "location": "2132 Ellsworth St, Philadelphia PA 19146",
     "url": "https://www.facebook.com/events/640027356182072/",
     "org": "DxE Philly",
-    "contact": "Mary Kate Fain, mkfain1@gmail.com"
+    "contact": "Mary Kate Fain, mkfain1@gmail.com",
+    "details": ""
 },
 {
     "id": 3,
     "title": "PARA Meeting 3",
-    "start": "4/23/2017 13:00:00",
-    "end": "4/23/2017 15:00:01",
+    "date": "4/23/2017",
+    "time": "1:00 pm - 3:00 pm",
+    "location": "2132 Ellsworth St, Philadelphia PA 19146",
     "url": "https://www.facebook.com/events/662591040608837/",
     "org": "PARA",
-    "contact": "phillyanimalrights@gmail.com"
+    "contact": "phillyanimalrights@gmail.com",
+    "details": ""
+},
+{
+    "id": 4,
+    "title": "Britches Day PA Candlelight Procession & Vigil",
+    "date": "4/20/2017",
+    "time": "6:30 pm - 8:00 pm",
+    "location": "Walmart Parking Lot, Eddystone Crossing",
+    "url": "https://www.facebook.com/events/253691375083403/",
+    "org": "DxE Philly",
+    "contact": "FB: @breakframes, Rachel Ogden, Nicole Parr: fightforliberation@gmail.com",
+    "details": ""
+
 }]

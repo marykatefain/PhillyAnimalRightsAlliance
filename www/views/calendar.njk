@@ -11,9 +11,22 @@
   <section class="primary-content">
     <h3>Philly Animal Rights Events</h3>
     <h3>Want to submit an event? Please complete this <a href="https://goo.gl/forms/ngIyndmicrTakqhT2" target="blank">form</a>.</h3>
-    <div class="cal">
-      <div id="calendar"></div>
-    </div>
+
+    {% for event in events %}
+
+      <div class="event-details" id="event{{event.id}}">
+        <h3>{{event.title}}</h3>
+          <p><strong>Hosted By: </strong>{{event.org}}</p>
+          <p><strong>Date: </strong>{{event.date}}</p>
+          <p><strong>Time: </strong>{{event.time}}</p>
+          <p><strong>Location: </strong>{{event.location}}</p>
+          <p><strong>Link: </strong>{{event.url}}</p>
+          <p><strong>Contact: </strong>{{event.contact}}</p>
+          <p><strong>Details: </strong>{{event.details}}</p>
+      </div>
+
+    {% endfor %}
+
   </section>
 
   <section class="sidebar">

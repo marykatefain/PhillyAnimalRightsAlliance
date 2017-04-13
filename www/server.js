@@ -14,6 +14,9 @@ app.use('/fullcalendar', express.static('fullcalendar'));
 
 app.use('/data', express.static('data'));
 
+var events = require('./data/data.json');
+
+
 
 
 nunjucks.configure("views", {
@@ -30,7 +33,9 @@ app.get("/about", function (req, res){
 });
 
 app.get("/calendar", function (req, res) {
-  res.render("calendar.njk");
+  res.render("calendar.njk", {
+    events: events
+  });
 });
 
 app.get("/campaigns", function (req, res){
