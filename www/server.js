@@ -16,10 +16,34 @@ app.use('/assets', express.static('assets'));
 nunjucks.configure("views", {
   autoescape: true,
   express: app
-})
+});
 
 app.get("/", function (req, res){
-  res.render("index.njk")
-})
+  res.render("index.njk");
+});
+
+app.get("/about", function (req, res){
+  res.render("about.njk");
+});
+
+app.get("/calendar", function (req, res) {
+  res.render("calendar.njk");
+});
+
+app.get("/campaigns", function (req, res){
+  res.render("campaigns.njk");
+});
+
+app.get("/contact", function (req, res) {
+  res.render("contact.njk");
+});
+
+app.get("/end_hdc", function (req, res){
+  res.render("end_hdc.njk");
+});
+
+app.get("/resources", function (req, res) {
+  res.render("resources.njk");
+});
 
 app.listen(3000);

@@ -146,11 +146,17 @@ nav a {
   display: none;
   width: 400px;
   height: auto;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   position: absolute;
-  right: 0;
+  right: 200px;
   border: #fff 4px solid;
+  text-align: center;
+}
+
+.formdiv h3 {
+  text-align: center;
+  margin: 0 auto;
 }
 
 .close {
@@ -216,7 +222,6 @@ nav a {
 footer {
   display: flex;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.4);
   margin-top: 100px;
   background-color: #E45700;
 }
@@ -245,7 +250,7 @@ footer img {
 }
 
 input, textarea {
-  width: 500px;
+  width: 250px;
   padding: 20px;
 }
 
