@@ -43,20 +43,7 @@ body {
 
 .title.campaign {
   font-size: 5vw;
-  margin-top: 0px;
-}
-
-h1 {
-  text-transform: uppercase;
-  margin: 0;
-}
-
-h2 {
-  font-size: 5vw;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  text-shadow: 2px 2px #333333;
-  margin-top: 20px;
+  margin-top: 0px
   color: #FFE4B5;
   text-align: left;
 }
@@ -104,15 +91,16 @@ header {
   margin: 0px 0px 20px 0px;
   padding-top: 20px;
   text-align: right;
+}
 
-  nav {
-    margin: 0px 0px 20px 0px;
-    width: 100%;
+nav {
+  margin: 0px 0px 20px 0px;
+  width: 100%;
+}
 
-    a {
-      padding: 0 15px;
-    }
-  }
+nav a {
+  padding: 0 15px;
+
 }
 
 .logo {
@@ -138,14 +126,14 @@ header {
   justify-content: space-around;
   margin-bottom: 50px;
   margin: auto 20px;
+}
 
-  img {
+.information img {
     border-radius: 100%;
     border: 5px solid white;
     padding: 3px;
     margin-bottom: 10px;
   }
-}
 
 .parent {
   position: relative;
@@ -196,7 +184,6 @@ header {
 
 .detailed-page {
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
 }
 
@@ -205,41 +192,25 @@ header {
   background-color: #f9ddcc;
   width: 25%;
   color: #0f0f0f;
+}
 
-  p {
-    padding: 0 20px;
-    text-align: left;
-  }
+.sidebar p {
+  padding: 0 20px;
+  text-align: left;
+}
 
-  a {
-    color: #E45700;
-    text-decoration: none;
-    font-weight: bold;
-  }
+.sidebar a {
+  color: #E45700;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-  a:hover {
-    color: #ee9a66;
-  }
-
+.sidebar a:hover {
+  color: #ee9a66;
 }
 
 .primary-content {
   width: 75%;
-  margin-top: 0px;
-
-  a {
-    text-decoration: underline;
-  }
-
-  h3 {
-    padding-left: 0px;
-    margin-top: 0px;
-  }
-
-}
-
-.cal {
-  margin-right: 20px;
 }
 
 footer {
@@ -248,23 +219,22 @@ footer {
   background-color: rgba(0, 0, 0, 0.4);
   margin-top: 100px;
   background-color: #E45700;
+}
 
-  .facebook, .contact {
-    padding: 30px;
-  }
+footer a:hover {
+  color: #0f0f0f;
+}
 
-  .contact {
-    text-align: left;
+footer img {
+    height: 50px;
+}
 
-    img {
-      height: 50px;
-    }
+.contact {
+  text-align: left;
+}
 
-    a:hover {
-      color: #0f0f0f;
-    }
-
-  }
+.facebook, .contact {
+  padding: 30px;
 }
 
 .contact-form {
@@ -272,11 +242,11 @@ footer {
   flex-direction: column;
   align-items: center;
   margin: 20px 0;
+}
 
-  input, textarea {
-    width: 500px;
-    padding: 20px;
-  }
+input, textarea {
+  width: 500px;
+  padding: 20px;
 }
 
 .text {
