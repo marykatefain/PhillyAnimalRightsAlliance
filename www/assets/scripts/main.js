@@ -21,12 +21,14 @@ for (var i=0; i<entries.length; i++) {
     "id": entry.gsx$id.$t,
     "title": entry.gsx$titleofevent.$t,
     "date": entry.gsx$date.$t,
-    "start": entry.gsx$starttime.$t
-    "end": entry.gsx$endtime.$t
-    "location": entry.gsx$location.$t
-    "class": entry.gsx$typeofevent.$t
-    "url": entry.gsx$date.$t
-    "contact": entry.gsx$contact.$t
+    "start": entry.gsx$starttime.$t,
+    "end": entry.gsx$endtime.$t,
+    "location": entry.gsx$location.$t,
+    "class": entry.gsx$typeofevent.$t,
+    "url": entry.gsx$date.$t,
+    "contact": entry.gsx$contact.$t,
     "details": entry.gsx$details.$t
   });
-}``
+}
+
+console.log(events);
