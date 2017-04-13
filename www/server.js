@@ -2,8 +2,6 @@ var nunjucks = require("nunjucks");
 
 var express = require("express");
 
-var events = require("./data/data.json");
-
 var fs = require("fs");
 
 var app = express();
@@ -13,6 +11,9 @@ app.use(express.static('/assets'));
 app.use('/assets', express.static('assets'));
 
 app.use('/fullcalendar', express.static('fullcalendar'));
+
+app.use('/data', express.static('data'));
+
 
 
 nunjucks.configure("views", {
