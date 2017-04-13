@@ -154,9 +154,8 @@ nav a {
   text-align: center;
 }
 
-.formdiv h3 {
+h3#form {
   text-align: center;
-  margin: 0 auto;
 }
 
 .close {
@@ -251,7 +250,6 @@ footer img {
 
 input, textarea {
   width: 250px;
-  padding: 20px;
 }
 
 .text {
