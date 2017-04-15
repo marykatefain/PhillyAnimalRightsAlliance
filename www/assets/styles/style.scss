@@ -96,6 +96,7 @@ section {
   background-position: absolute;
   min-height: 410px;
   width: 100%;
+  border-bottom: 5px solid white;
 }
 
 header {
@@ -248,6 +249,8 @@ footer {
   background-color: rgba(0, 0, 0, 0.4);
   margin-top: 100px;
   background-color: #E45700;
+  border-bottom: 5px solid white;
+
 
   .facebook, .contact {
     padding: 30px;
