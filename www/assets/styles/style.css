@@ -239,10 +239,11 @@ h3#form {
 }
 
 footer {
-  justify-content: space-around;
+  text-align: left;
   margin-top: 100px;
   padding-bottom: 40px;
   padding-top: 20px;
+  padding-left: 20px;
   background-color: #E45700;
   border-top: 5px solid white;
 
@@ -258,13 +259,13 @@ footer img {
 
 #footer-github {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+  margin-top: -15px;
 }
 
 #github-logo {
-  padding-right: 10px;
-  padding-left: -10px;
+  padding-left: 10px;
   height: 30px;
 }
 
