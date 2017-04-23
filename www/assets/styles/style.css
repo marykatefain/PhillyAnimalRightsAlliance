@@ -24,6 +24,11 @@ body {
   flex-direction: column;
 }
 
+@media (max-width: 650px) {
+  .content {
+    display: block;
+    margin: 0, auto;
+  }
 
 .title {
   text-align: center;
@@ -131,12 +136,24 @@ nav a {
   margin: auto 20px;
 }
 
+@media (max-width: 650px) {
+  .information {
+    display: block;
+    margin-left: -20px;
+  }
+
 .information img {
     border-radius: 100%;
     border: 5px solid white;
     padding: 3px;
     margin-bottom: 10px;
   }
+
+
+  @media (max-width: 650px) {
+    .information img {
+      margin-bottom: 0px;
+    }
 
 .parent {
   position: relative;
@@ -187,11 +204,24 @@ h3#form {
   width: 30%;
 }
 
+@media (max-width: 650px) {
+  .category {
+    width: 100%;
+    margin: 20px;
+    margin-bottom: 40px;
+    text-shadow: center;
+  }
+
 .category img {
   width: 200px;
   height: 200px;
   filter: grayscale(100%);
 }
+
+@media (max-width: 650px) {
+  .category img {
+    filter: grayscale(0%);
+  }
 
 .category img:hover {
   filter: grayscale(0%);
