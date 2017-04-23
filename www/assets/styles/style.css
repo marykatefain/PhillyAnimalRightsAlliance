@@ -29,6 +29,7 @@ body {
     display: block;
     margin: 0, auto;
   }
+}
 
 .title {
   text-align: center;
@@ -101,6 +102,13 @@ header {
   text-align: right;
 }
 
+@media (max-width: 650px) {
+  header {
+    display: block;
+    text-align: center;
+  }
+}
+
 nav {
   margin: 0px 0px 20px 0px;
   width: 100%;
@@ -141,6 +149,7 @@ nav a {
     display: block;
     margin-left: -20px;
   }
+}
 
 .information img {
     border-radius: 100%;
@@ -154,6 +163,7 @@ nav a {
     .information img {
       margin-bottom: 0px;
     }
+  }
 
 .parent {
   position: relative;
@@ -173,6 +183,22 @@ nav a {
   text-align: center;
 }
 
+.form_div h3 {
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .form_div {
+    position: absolute;
+    margin: 0 auto;
+    right: auto;
+    bottom: -100px;
+    width: 350px;
+    background-color: black;
+    align-items: center;
+
+  }
+}
 
 h3#form {
   text-align: center;
@@ -211,6 +237,7 @@ h3#form {
     margin-bottom: 40px;
     text-shadow: center;
   }
+}
 
 .category img {
   width: 200px;
@@ -222,6 +249,7 @@ h3#form {
   .category img {
     filter: grayscale(0%);
   }
+}
 
 .category img:hover {
   filter: grayscale(0%);
