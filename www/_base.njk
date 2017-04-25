@@ -1,124 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Philly Animal Rights Alliance</title>
+<head>
+  <title>Philly Animal Rights Alliance</title>
 
-        <!-- Meta -->
-    <meta name="description" content="A coalition for animal liberation.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="#E45700">
-    <meta name="msapplication-config" content="/browserconfig.xml">
-    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <!-- Meta -->
+  <meta name="description" content="A coalition for animal liberation.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#E45700">
+  <meta name="msapplication-config" content="/browserconfig.xml">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
 
 
-    <!-- Open Graph protocol -->
-    <meta property="og:title" content="Philly Animal Rights Alliance">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://phillyara.surge.sh/calendar">
-    <meta property="og:image" content="http://phillyara.surge.sh/assets/images/logo-draft-inverted.png">
-    <meta property="og:description" content="A coalition for animal liberation.">
-    <meta property="og:locale" content="en_US">
+  <!-- Open Graph protocol -->
+  <meta property="og:title" content="Philly Animal Rights Alliance">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://phillyara.surge.sh/calendar">
+  <meta property="og:image" content="http://phillyara.surge.sh/assets/images/logo-draft-inverted.png">
+  <meta property="og:description" content="A coalition for animal liberation.">
+  <meta property="og:locale" content="en_US">
 
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="/assets/styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="/assets/styles/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 
-    <!-- Calendar stuff -->
-    <link rel='stylesheet' href='./fullcalendar/fullcalendar.css' />
-    <script src='./fullcalendar/lib/jquery.min.js'></script>
-    <script src='/fullcalendar/lib/moment.min.js'></script>
-    <script src='./fullcalendar/fullcalendar.js'></script>
-    <script>
-        $(document).ready(function() {
+  <!-- Calendar stuff -->
+  <link rel='stylesheet' href='./fullcalendar/fullcalendar.css' />
+  <script src='./fullcalendar/lib/jquery.min.js'></script>
+  <script src='/fullcalendar/lib/moment.min.js'></script>
+  <script src='./fullcalendar/fullcalendar.js'></script>
+  <script>
+  $(document).ready(function() {
 
-        // page is now ready, initialize the calendar...
+    // page is now ready, initialize the calendar...
 
-        $('#calendar').fullCalendar({
-            // put your options and callbacks here
-            events: './data.json'
-        })
-      });
+    $('#calendar').fullCalendar({
+      // put your options and callbacks here
+      events: './data.json'
+    })
+  });
   </script>
+</head>
 
-  </head>
+<body class="{{ current.source }}">
+  <header>
 
-  <body class="{{ current.source }}">
-    <div class ="headerparent">
-      <header>
+    <div class="topnav">
         <div class="logo">
-          <a href="/"><img src="./assets/images/logo-inverted-transparent.png"></av>
+          <a href="/"><img src="./assets/images/logo-inverted-transparent.png"></a>
+          <span class="mobile-only"><h1>Philly Animal Rights Alliance<h1></span>
         </div>
+
         <nav>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/campaigns">Campaigns</a>
-            <a href="/calendar">Calendar</a>
-            <a href="/resources">Resources</a>
-            <div class="button" id="updates" onclick="showDiv()">Get Updates!</div>
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/campaigns">Campaigns</a>
+          <a href="/calendar">Calendar</a>
+          <a href="/resources">Resources</a>
+          <div class="button" id="updates" onclick="showDiv()">Get Updates!</div>
         </nav>
 
-        <div class="parent">
-          <div class="form_div" id="hidden_form">
-            <h3>Subscribe to Updates</h3>
-            <form target="transFrame" action="https://docs.google.com/forms/d/e/1FAIpQLSdc7O_TfYuqUOPm5D5O65b9RMjQtmFtOh0HWSxlBpB2OBO99Q/formResponse" method="POST">
-              <label for="entry.1923990243">Name:</label>
-              <input type="text" name="entry.1923990243"><br><br>
-              <label for="entry.1795929851">E-mail:</label>
-              <input type="text" name="entry.1795929851"><br><br>
-              <input class="button" type="submit" value="Send" onclick="hideDiv()">
-            </form>
-            <div class="close" onclick="hideDiv()"><p>Close</p></div>
-            <iframe style="display: none;" name="transFrame" id="transFrame"></iframe>
-          </div>
+        <div class="form_div" id="hidden_form">
+          <h3>Subscribe to Updates</h3>
+          <form target="transFrame" action="https://docs.google.com/forms/d/e/1FAIpQLSdc7O_TfYuqUOPm5D5O65b9RMjQtmFtOh0HWSxlBpB2OBO99Q/formResponse" method="POST">
+            <label for="entry.1923990243">Name:</label>
+            <input type="text" name="entry.1923990243"><br><br>
+            <label for="entry.1795929851">E-mail:</label>
+            <input type="text" name="entry.1795929851"><br><br>
+            <input class="button" type="submit" value="Send" onclick="hideDiv()">
+          </form>
+          <div class="close" onclick="hideDiv()"><p>Close</p></div>
+          <iframe style="display: none;" name="transFrame" id="transFrame"></iframe>
         </div>
-      </header>
+
+      </div>
 
       <div class = "pagebanner">
         {% block title %}{% endblock %}
       </div>
 
-    </div>
+    </header>
+
 
     <div class="content">
       {% block content %}{% endblock %}
     </div>
 
     <footer>
-       <!--
+      <!--
       <div class="facebook">
-        <div class="fb-page" data-href="https://www.facebook.com/phillyanimalrights/" data-tabs="events, timeline" data-height="350" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
-          <blockquote cite="https://www.facebook.com/phillyanimalrights/" class="fb-xfbml-parse-ignore">
-            <a href="https://www.facebook.com/phillyanimalrights/">Philly Animal Rights Alliance</a>
-          </blockquote>
-        </div>
-      </div> -->
-      <div id="footer-social">
-        <p><a href="https://www.facebook.com/phillyanimalrights"><img src="/assets/images/like-us-on-facebook.png"></a></p>
-      </div>
+      <div class="fb-page" data-href="https://www.facebook.com/phillyanimalrights/" data-tabs="events, timeline" data-height="350" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+      <blockquote cite="https://www.facebook.com/phillyanimalrights/" class="fb-xfbml-parse-ignore">
+      <a href="https://www.facebook.com/phillyanimalrights/">Philly Animal Rights Alliance</a>
+    </blockquote>
+  </div>
+</div> -->
+<div id="footer-social">
+  <p><a href="https://www.facebook.com/phillyanimalrights"><img src="/assets/images/like-us-on-facebook.png"></a></p>
+</div>
 
-      <div id="footer-contact">
-        <p>For more information contact us at
-        <a href="mailto:phillyanimalrights@gmail.com">phillyanimalrights@gmail.com</a></p>
-        <p>This website is free software, licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPL 3.0 </a>.</p>
-      </div>
+<div id="footer-contact">
+  <p>For more information contact us at
+    <a href="mailto:phillyanimalrights@gmail.com">phillyanimalrights@gmail.com</a></p>
+    <p>This website is free software, licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPL 3.0 </a>.</p>
+  </div>
 
-      <div id="footer-github">
-        <p>Join the movement! Contribute to this website on <a href="https://github.com/marykatefain/PhillyAnimalRightsAlliance">Github</a></p>
-        <a href="https://github.com/marykatefain/PhillyAnimalRightsAlliance"> <img id="github-logo" src="/assets/images/github.png"></a>
-      </div>
+  <div id="footer-github">
+    <p>Join the movement! Contribute to this website on <a href="https://github.com/marykatefain/PhillyAnimalRightsAlliance">Github</a></p>
+    <a href="https://github.com/marykatefain/PhillyAnimalRightsAlliance"> <img id="github-logo" src="/assets/images/github.png"></a>
+  </div>
 
-    </footer>
+</footer>
 
-    <script src="/assets/scripts/main.js"></script>
-    <div id="fb-root"></div>
-    <script>
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-  </body>
+<script src="/assets/scripts/main.js"></script>
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+</body>
 </html>
