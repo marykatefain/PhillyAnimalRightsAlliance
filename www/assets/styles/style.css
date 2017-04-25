@@ -117,6 +117,7 @@ nav a {
     width: 80px;
     height: 80px;
   }
+}
 
 .banner {
   width: 100%;
@@ -396,17 +397,6 @@ footer img {
     height: 50px;
 }
 
-#footer-github {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  margin-top: -15px;
-}
-
-#github-logo {
-  padding-left: 10px;
-  height: 30px;
-}
 
 .contact-form {
   display: flex;
@@ -438,6 +428,7 @@ input, textarea {
   cursor: pointer;
   margin: 15px;
 }
+
 
 .button:hover {
   background-color: #E6C800;
