@@ -54,11 +54,11 @@
         </div>
 
         <nav>
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/campaigns">Campaigns</a>
-          <a href="/calendar">Calendar</a>
-          <a href="/resources">Resources</a>
+          <a {% if current.source == 'index' %} class="active"{% endif %} href="/">Home</a>
+          <a {% if current.source == 'about' %} class="active"{% endif %} href="/about">About</a>
+          <a {% if current.source == 'campaigns' %} class="active"{% endif %} href="/campaigns">Campaigns</a>
+          <a {% if current.source == 'calendar' %} class="active"{% endif %} href="/calendar">Calendar</a>
+          <a {% if current.source == 'resources' %} class="active"{% endif %} href="/resources">Resources</a>
           <div class="button" id="updates" onclick="showDiv()">Get Updates!</div>
         </nav>
 

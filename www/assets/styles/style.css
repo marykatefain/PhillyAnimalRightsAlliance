@@ -72,6 +72,7 @@ nav a {
   padding: 0 15px;
 }
 
+
 @media (max-width: 650px) {
   nav {
     display: flex;
@@ -189,7 +190,8 @@ a {
   font-weight: bold;
 }
 
-a:hover {
+a:hover,
+a.active {
   color: #ee9a66;
 }
 
