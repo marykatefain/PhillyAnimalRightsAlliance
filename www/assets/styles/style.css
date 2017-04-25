@@ -254,7 +254,7 @@ section {
     top: 100px;
     right: 20px;
     width: 350px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.9);
     align-items: center;
   }
 }
