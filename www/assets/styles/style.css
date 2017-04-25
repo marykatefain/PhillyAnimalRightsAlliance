@@ -105,6 +105,12 @@ nav a {
   height: 100px;
 }
 
+@media (max-width: 650px) {
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
+
 .banner {
   width: 100%;
   height: auto;
