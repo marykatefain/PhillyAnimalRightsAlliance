@@ -119,6 +119,11 @@ nav a {
 .pagebanner {
 }
 
+@media (max-width: 650px) {
+  .pagebanner {
+    display: none;
+  }
+}
 
 .content {
   margin: auto 20px;
