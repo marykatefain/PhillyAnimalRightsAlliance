@@ -41,6 +41,13 @@ header {
 }
 
 
+@media (max-width: 650px) {
+  header {
+    background-image: url("/assets/images/background2_dark_mobile.jpg");
+  }
+}
+
+
 .topnav {
   display: flex;
   justify-content: space-between;
@@ -244,11 +251,11 @@ section {
     position: absolute;
     margin: 0 auto;
     right: auto;
-    bottom: -100px;
+    top: 100px;
+    right: 20px;
     width: 350px;
     background-color: black;
     align-items: center;
-
   }
 }
 
