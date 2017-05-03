@@ -63,8 +63,17 @@ header {
   }
 }
 
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#updates.button {
+  flex-shrink: 0;
+}
+
 nav {
-  margin: 0px 0px 20px 0px;
   width: 100%;
 }
 
@@ -76,7 +85,24 @@ nav a {
 @media (max-width: 650px) {
   nav {
     display: flex;
-    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+    background: black;
+    margin-bottom: 0;
+    width: 100%;
+    overflow-x: scroll;
+  }
+  body {
+    /* Make room to scroll all the way down with the nav overlaid */
+    margin-bottom: 70px;
+  }
+  header {
+    /* Make the header not big since there's no nav in it */
+    min-height: 0;
   }
 }
 
@@ -85,7 +111,7 @@ nav a {
   nav a{
     display: block;
     width: 100%;
-    height: 30px;
+    padding: 20px 7px;
   }
 }
 

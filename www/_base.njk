@@ -53,14 +53,16 @@
           <span class="mobile-only"><h1>Philly Animal Rights Alliance<h1></span>
         </div>
 
-        <nav>
-          <a {% if current.source == 'index' %} class="active"{% endif %} href="/">Home</a>
-          <a {% if current.source == 'about' %} class="active"{% endif %} href="/about">About</a>
-          <a {% if current.source == 'campaigns' %} class="active"{% endif %} href="/campaigns">Campaigns</a>
-          <a {% if current.source == 'calendar' %} class="active"{% endif %} href="/calendar">Calendar</a>
-          <a {% if current.source == 'resources' %} class="active"{% endif %} href="/resources">Resources</a>
+        <div class="menu">
+          <nav>
+            <a {% if current.source == 'index' %} class="active"{% endif %} href="/">Home</a>
+            <a {% if current.source == 'about' %} class="active"{% endif %} href="/about">About</a>
+            <a {% if current.source == 'campaigns' %} class="active"{% endif %} href="/campaigns">Campaigns</a>
+            <a {% if current.source == 'calendar' %} class="active"{% endif %} href="/calendar">Calendar</a>
+            <a {% if current.source == 'resources' %} class="active"{% endif %} href="/resources">Resources</a>
+          </nav>
           <div class="button" id="updates" onclick="showDiv()">Get Updates!</div>
-        </nav>
+        </div>
 
         <div class="form_div" id="hidden_form">
           <h3>Subscribe to Updates</h3>
